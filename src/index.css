@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f3f4f6;
+  color: #111827;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+a {
+  color: #1d4ed8;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+button {
+  font-family: inherit;
+  cursor: pointer;
+}
+
+
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+
+.navbar {
+  background: blueviolet;
+  color: #fff;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+}
+.navbar-logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.navbar-search input {
+  width: 250px;
+  max-width: 100%;
+  padding: 0.5rem;
+  border-radius: 9999px;
+  border: 1px solid #fff;
+}
+.navbar-links a {
+  margin-left: 1rem;
+  color: #fff;
+}
+.navbar-links a:hover {
+  text-decoration: underline;
+}
+
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.5rem 0;
+}
+.sort-buttons {
+  display: flex;
+  align-items: center;
+}
+.sort-buttons span {
+  margin-right: 0.5rem;
+  font-weight: bold;
+}
+.sort-buttons button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: blueviolet;
+  color: #fff;
+  transition: background 0.2s;
+}
+.sort-buttons button.active,
+.sort-buttons button:hover {
+  background: blueviolet;
+}
+.controls-search {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  border: 1px solid #d1d5db;
+}
+
+.card {
+  display: block;
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin-bottom: 1rem;
+  text-decoration: none;
+  color: inherit;
+  transition: box-shadow 0.2s;
+}
+.card:hover {
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+.card .date {
+  font-size: 0.9rem;
+  color: #6b7280;
+  margin-bottom: 0.5rem;
+}
+.card .title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.card .upvotes {
+  color: #374151;
+}
+
+
+.form-container {
+  background: #fff;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin: 2rem auto;
+  max-width: 600px;
+}
+.form-container h2 {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+  font-size: 1rem;
+}
+.form-container textarea {
+  resize: none;
+  height: 8rem;
+}
+.form-container button {
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: blueviolet;
+  color: #fff;
+  font-size: 1rem;
+  transition: background 0.2s;
+}
+.form-container button:hover {
+  background: blueviolet;
+}
+
+
+.post-actions {
+  margin-top: 1rem;
+}
+.post-actions button {
+  margin-right: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+  background: blueviolet;
+  color: #fff;
+  transition: background 0.2s;
+}
+.post-actions button.delete {
+  background: #ef4444;
+}
+.post-actions button.edit {
+  background: #fbbf24;
+  color: #111827;
+}
+.post-actions button.delete:hover {
+  background: #dc2626;
+}
+.post-actions button.edit:hover {
+  background: #f59e0b;
+}
+
+
+.comments {
+  background: #f9fafb;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-top: 1rem;
+}
+.comments p {
+  margin-bottom: 0.5rem;
+  color: #374151;
+}
+.comments input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #d1d5db;
+  border-radius: 0.25rem;
+}
+
+.comment-form {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.comment-form input {
+  flex: 1;
+  margin-right: 0.5rem;
+}
+
+.comment-form button {
+  padding: 0.5rem 1rem;
+  background: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+}
